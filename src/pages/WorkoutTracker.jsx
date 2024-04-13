@@ -10,6 +10,7 @@ import AlertTriangle from '../assets/Images/triangle.png'
 import WorkoutImg1 from '../assets/Images/workout-1.png'
 import WorkoutImg2 from '../assets/Images/workout-2.png'
 import WorkoutImg3 from '../assets/Images/workout-3.png'
+import { Link } from 'react-router-dom'
 
 function WorkoutTracker() {
   return (
@@ -76,10 +77,10 @@ function WorkoutTracker() {
       </div>
 
       {/* navigation menu */}
-      <div className='w-full fixed bottom-0 left-0 bg-white px-6 py-5'>
+      <div className='w-96 fixed bottom-0 left-0 bg-white px-6 py-5'>
         <div className='flex justify-between'>
-          <img src={HomeIcon} alt="home icon" />
-          <img src={TrackerIcon} alt="tracker icon" />
+          <Link to='/tracker'><img src={HomeIcon} alt="home icon" /></Link>
+          <Link to='/schedule'><img src={TrackerIcon} alt="tracker icon" /></Link>
           <div></div>
           <img src={CameraIcon} alt="camera icon" />
           <img src={UserIcon} alt="user icon" />

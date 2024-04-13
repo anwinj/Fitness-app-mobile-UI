@@ -6,6 +6,7 @@ import CameraIcon from '../assets/Images/camera.png'
 import UserIcon from '../assets/Images/user.png'
 import BackICon from '../assets/Images/back.png'
 import PlusIcon from '../assets/Images/plus.png'
+import { Link } from 'react-router-dom'
 
 function WorkoutSchedule() {
   return (
@@ -108,10 +109,10 @@ function WorkoutSchedule() {
       </div>
 
       {/* navigation menu */}
-      <div className='w-full fixed bottom-0 left-0 bg-white px-6 py-5'>
+      <div className='w-96 fixed bottom-0 left-0 bg-white px-6 py-5'>
         <div className='flex justify-between'>
-          <img src={HomeIcon} alt="home icon" />
-          <img src={TrackerIcon} alt="tracker icon" />
+          <Link to='/tracker'><img src={HomeIcon} alt="home icon" /></Link>
+          <Link to='/schedule'><img src={TrackerIcon} alt="tracker icon" /></Link>
           <div></div>
           <img src={CameraIcon} alt="camera icon" />
           <img src={UserIcon} alt="user icon" />
